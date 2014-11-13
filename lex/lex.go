@@ -51,7 +51,7 @@ var (
 	alnum  = (*rex)(re.MustCompile(`[\pL\pN]`))
 	punct  = (*rex)(re.MustCompile(`[;:|,]`))
 	decl   = (*rex)(re.MustCompile(`[=⇒]`))
-	binopr = (*rex)(re.MustCompile(`[+-^/]` + "|`"))
+	binopr = (*rex)(re.MustCompile(`[+-/^]` + "|`"))
 )
 
 const EOF rune = 0xFFD
